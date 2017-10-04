@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Calculadora
 {
-    class Program
+    class Classe2
     {
-        static void Main(string[] args)
+        public void Metodo1()
         {
 
         }
