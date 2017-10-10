@@ -34,7 +34,6 @@ Task("OpenCover")
             },
             outputFile,
             openCoverSettings
-                .ExcludeByAttribute("*ExcludeFromCoverage*")
                 .WithFilter("+[Calculadora*]*")
                 .WithFilter("-[Calculadora.Tests]*")
         );
