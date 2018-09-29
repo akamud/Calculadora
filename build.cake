@@ -26,6 +26,9 @@ Task("OpenCover")
             ArgumentCustomization = args => args.Append("-coverbytest:*.Tests.dll").Append("-mergebyhash")
         };
 
+        if (!DirectoryExists("./GeneratedReports"))
+            CreateDirectory("./GeneratedReports");
+        
         var outputFile = new FilePath("./GeneratedReports/CalculadoraReport.xml");
 
         OpenCover(tool => {
